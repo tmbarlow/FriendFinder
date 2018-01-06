@@ -7,6 +7,9 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   
+    <!--chosen-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.2/chosen.jquery.min.js"></script>
+
     <!--font awesome Glyphicons-->
     <script src="https://use.fontawesome.com/f4a1380ac2.js"></script>
 
@@ -33,10 +36,10 @@
 
     <hr>
 
-    <h3><strong>Question 1</strong></h3>
-    <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+    <h5><strong>Question 1</strong></h5>
+    <p>Your mind is always buzzing with unexplored ideas and plans.</p>
     <select data-placeholder='' class='chosen-select' id='q1'>
-        <option value=""></option>
+        <option value="">Choose an option</option>
         <option value='1'>1 (Strongly Disagree)</option>
         <option value='2'>2</option>
         <option value='2'>3</option>
@@ -44,15 +47,205 @@
         <option value='1'>5 (Strongly Agree)</option>
     </select>
 
+    <h5><strong>Question 2</strong></h5>
+    <p>I see myself as critical, quarrelsome.</p>
+    <select data-placeholder="" class="chosen-select" id="q2">
+        <option value="">Choose an option</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <h5><strong>Question 3</strong></h5>
+    <p>I see myself as dependable, self-disciplined.</p>
+    <select data-placeholder="" class="chosen-select" id="q3">
+        <option value="">Choose an option</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <h5><strong>Question 4</strong></h5>
+    <p>I see myself as anxious, easily upset.</p>
+    <select data-placeholder="" class="chosen-select" id="q4">
+        <option value="">Choose an option</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <h5><strong>Question 5</strong></h5>
+    <p>I see myself as open to new experiences.</p>
+    <select data-placeholder="" class="chosen-select" id="q5">
+        <option value="">Choose an option</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <h5><strong>Question 6</strong></h5>
+    <p>I see myself as reserved, quiet</p>
+    <select data-placeholder="" class="chosen-select" id="q6">
+        <option value="">Choose an Option</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <h5><strong>Question 7</strong></h5>
+    <p>I see myself as sympathetic.</p>
+    <select data-placeholder="" class="chosen-select" id="q7">
+        <option value="">Choose an option</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <h5><strong>Question 8</strong></h5>
+    <p>I see myself as disorganized.</p>
+    <select data-placeholder="" class="chosen-select" id="q8">
+        <option value="">Choose an option</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <h5><strong>Question 9</strong></h5>
+    <p>I see myself as calm, emotionally stable.</p>
+    <select data-placeholder="" class="chosen-select" id="q9">
+        <option value="">Choose an option</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <h5><strong>Question 10</strong></h5>
+    <p>I see myself as practical, conventional.</p>
+    <select data-placeholder="" class="chosen-select" id="q10">
+        <option value="">Choose an option</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <br>
+
+    <br>
+
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit</button>
+
+    <hr>
+
     <footer class="footer">
       <div class="container">
-        <p><a href="/api/tables">API Friends List</a> | 
+        <p><a href="/api/friends">API Friends List</a> | 
             <!-- <a href="/api/waitlist">API Wait List</a> |  -->
-            <a href="https://github.com/afhaque/HotRestaurant">GitHub Repo</a></p>
+            <a href="https://github.com/tmbarlow/FriendFinder.git">GitHub Repo</a></p>
       </div>
     </footer>
 
   </div>
 
+  <div id='resultsModal' class='modal fade' role='dialog'>
+    <div class='modal-dialog'>
+
+      <!--Modal content-->
+      <div class='modal-content'>
+        <div class='modal-header'>
+          <button type='button' class='close' data-dismiss='modal'>&times;</button>
+          <h2 class='modal-title'><strong>Best Match</strong></h2>
+        </div>
+        <div class='modal-body'>
+          <h2 id='matchName'></h2>
+          <img id='matchImg' src='https://a4-images.myspacecdn.com/images03/34/2b4dadd56c4943ba9ae284174e05d145/300x300.jpg' alt=''>
+        </div>
+        <div class='modal-footer'>
+          <button type='button' class='btn btn-default' data-dismiss='modal'>Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script type='text/javascript'>
+
+//chosen css
+var config = {
+  '.chosen-select': {}, 
+  '.chosen-select-deselect':{allow_single_deselect: true}, 
+  '.chosen-select-no-single': { disable_search_threshold: 10}, 
+  '.chosen-select-no-results': {no_results_text: "oops, nothing found!"}, 
+  '.chosen-select-width': {width: '95%'},
+};
+
+for (var selector in config) {
+  $(selector).chosen(config[selector]);
+};
+
+  // capture the form inputs
+  $('#submit').on("click", function() {
+
+    //form validation
+    function validateForm () {
+      var isValid = true;
+      $('.form-control').each(function() {
+        if ($(this).val() === "") {
+          isValid = false;
+        }
+      }); 
+
+      $('.chosen-select').each(function() {
+        if ($(this).val() === "") {
+          isValid = false;
+        }
+      });
+      return isValid;
+    }
+
+    if (validateForm()) {
+      var userData =  {
+        name: $('#name').val(), 
+        photo: $('#photo').val(), 
+        scores: [
+          $('#q1').val(), 
+          $('#q2').val(), 
+          $('#q3').val(), 
+          $('#q4').val(), 
+          $('#q5').val(), 
+          $('#q5').val(), 
+          $('#q6').val(), 
+          $('#q7').val(), 
+          $('#q8').val(), 
+          $('#q9').val(), 
+          $('#q10').val(), 
+        ]
+      }; 
+      var currentURL = window.location.orgin;
+
+      $.post(currentURL + "/api/friends", userData, function (data) {
+
+        //grab the result from the ajax post so that the best match's name and photo are displayed.
+        $('#matchName').text(data.name);
+        $('#matchImg').attr("src", data.photo);
+
+        //show the modal with the best match
+        $('#resultsModal').modal('toggle');
+       
+      });
+    }
+    else {
+      alert('Please fill out all fields before submitting!');
+    }
+    return false;
+  });
+</script>
 </body>
 </html>
