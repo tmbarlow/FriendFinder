@@ -19,21 +19,48 @@ var friends = [
         name: "Taylor",
         photo: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Taylor_Swift_%286966830273%29.jpg",
         scores: [
-            "5"
+            "4",
+            "5",
+            "5",
+            "2",
+            "4",
+            "5",
+            "4",
+            "4",
+            "3",
+            "3"
         ]
     }, 
     {
         name: "dwayne",
         photo: "http://projectrockofficial.com/images/overlay_rock.jpg",
         scores: [
-            "5"
+            "4",
+            "5",
+            "5",
+            "2",
+            "4",
+            "5",
+            "4",
+            "4",
+            "3",
+            "1"
         ]
     }, 
     {
         name: "Betty",
         photo: "http://cdn.cnn.com/cnnnext/dam/assets/120904131250-betty-white-2012-full-169.jpg",
         scores: [
-            "5"
+            "3",
+            "5",
+            "5",
+            "2",
+            "4",
+            "5",
+            "4",
+            "4",
+            "3",
+            "3"
         ]
     }
 ]; 

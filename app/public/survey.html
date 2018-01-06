@@ -6,18 +6,15 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  
-    <!--chosen-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.2/chosen.jquery.min.js"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <!-- chosen
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.2/chosen.jquery.min.js"></script> -->
 
     <!--font awesome Glyphicons-->
     <script src="https://use.fontawesome.com/f4a1380ac2.js"></script>
-
-    <!-- jquery cdn -->
-    <script
-    src="https://code.jquery.com/jquery-3.2.1.js"
-    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-    crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -46,7 +43,6 @@
         <option value='2'>4</option>
         <option value='1'>5 (Strongly Agree)</option>
     </select>
-
     <h5><strong>Question 2</strong></h5>
     <p>I see myself as critical, quarrelsome.</p>
     <select data-placeholder="" class="chosen-select" id="q2">
@@ -166,7 +162,7 @@
         </div>
         <div class='modal-body'>
           <h2 id='matchName'></h2>
-          <img id='matchImg' src='https://a4-images.myspacecdn.com/images03/34/2b4dadd56c4943ba9ae284174e05d145/300x300.jpg' alt=''>
+          <img id='matchImg' src='https://a4-images.myspacecdn.com/images03/34/2b4dadd56c4943ba9ae284174e05d145/300x300.jpg' alt='' width="50%">
         </div>
         <div class='modal-footer'>
           <button type='button' class='btn btn-default' data-dismiss='modal'>Close</button>
@@ -177,22 +173,9 @@
 
 <script type='text/javascript'>
 
-//chosen css
-var config = {
-  '.chosen-select': {}, 
-  '.chosen-select-deselect':{allow_single_deselect: true}, 
-  '.chosen-select-no-single': { disable_search_threshold: 10}, 
-  '.chosen-select-no-results': {no_results_text: "oops, nothing found!"}, 
-  '.chosen-select-width': {width: '95%'},
-};
-
-for (var selector in config) {
-  $(selector).chosen(config[selector]);
-};
-
   // capture the form inputs
-  $('#submit').on("click", function() {
-
+  $('#submit').on("click", function(event) {
+    event.preventDefault();
     //form validation
     function validateForm () {
       var isValid = true;
@@ -210,7 +193,7 @@ for (var selector in config) {
       return isValid;
     }
 
-    if (validateForm()) {
+    if (true) {
       var userData =  {
         name: $('#name').val(), 
         photo: $('#photo').val(), 
@@ -230,7 +213,7 @@ for (var selector in config) {
       }; 
       var currentURL = window.location.orgin;
 
-      $.post(currentURL + "/api/friends", userData, function (data) {
+      $.post("/api/friends", userData, function (data) {
 
         //grab the result from the ajax post so that the best match's name and photo are displayed.
         $('#matchName').text(data.name);
