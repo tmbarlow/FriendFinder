@@ -8,13 +8,7 @@ Created during Week 13. The goal was to create a Friend Finder app (essentially 
 - express NPM Package - https://www.npmjs.com/package/express
 - path NPM Package - https://www.npmjs.com/package/path
 
-### Prerequisites
 
-```
-- Node.js - Download the latest version of Node https://nodejs.org/en/
-- Materialize - Add CDN link to HTML http://materializecss.com/getting-started.html
-```
-
-## Authors
+## Author
 
 * **Tyler Barlow** - *HTML/JS/Node.js* 
