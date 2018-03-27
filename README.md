@@ -10,7 +10,7 @@ Created during Week 13. The goal was to create a Friend Finder app (essentially 
 
 ## App
 
-- https://tmbarlow-friendfinder.herokuapp.com/
+- https://pure-cove-20180.herokuapp.com/
 
 ## Author
 
