@@ -4,7 +4,7 @@ Created during Week 13. The goal was to create a Friend Finder app (essentially 
 
 ## Technologies used
 - Node.js
-- body-parager NPM Package - https://www.npmjs.com/package/inquirer
+- body-parser NPM Package - https://www.npmjs.com/package/body-parser
 - express NPM Package - https://www.npmjs.com/package/express
 - path NPM Package - https://www.npmjs.com/package/path
 
